@@ -27,7 +27,7 @@ public class controller implements MqttCallback {
     public ResponseEntity receivePostRequest(@RequestBody String message) {
         final String BROKER_URL = "tcp://test.mosquitto.org:1883";
         final Logger log = LoggerFactory.getLogger(controller.class);
-        final String TOPIC = "grupatras/lab/message";
+        final String TOPIC = "grupatras/lab/text";
 
         MqttConnectOptions connOpt = new MqttConnectOptions();
         connOpt.setCleanSession(true);
